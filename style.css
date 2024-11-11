@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Glory:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: black;
+  font-size: 22px;
+  font-family: "Glory", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 50px;
+}
+
+nav {
+  display: flex;
+  gap: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #ff8000;
+  transition: 0.4s ease-out;
+}
+
+select {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 80px;
+  align-self: self-end;
+}
+
+/* Burger menu styling */
+
+.burger {
+  align-self: flex-start;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger div {
+  align-self: flex-start;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+.home {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+}
+
+.home img {
+  width: 360px;
+  height: 360px;
+}
+
+.home p {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+
+.home button {
+  background: none;
+  border: none;
+}
+
+.home button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.home button :hover {
+  background-image: linear-gradient(45deg, #fe7d00, #ff8000, #ffe600);
+  color: #111;
+  padding: 10px 108px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.container {
+  margin-top: 167px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container h1 {
+  font-weight: lighter;
+  padding-left: 150px;
+  color: #fff;
+}
+
+.sticky-left {
+  width: 40%;
+  position: sticky;
+  top: 0;
+}
+
+.sticky-left img {
+  margin-top: 20px;
+  width: 450px;
+  height: auto;
+}
+
+.scrollable-right {
+  height: 1000px;
+  padding-right: 100px;
+  width: 55%;
+  overflow-y: auto;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.item {
+  display: flex;
+}
+
+.item .scnd-p {
+  padding-top: 150px;
+}
+
+.number p {
+  font-size: 20rem;
+  color: transparent;
+  font-weight: bold;
+  margin-right: 20px;
+  -webkit-text-stroke: 2px #fe7d00;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav a {
+    font-size: 15px;
+  }
+  nav {
+    gap: 40px;
+  }
+  select {
+    font-size: 10px;
+  }
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-container h1 {
+  color: #fff;
+  margin-bottom: 60px;
+  margin-right: 90px;
+  font-weight: normal;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+.large-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.large-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.thumbnails img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnails img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .large-image img {
+    height: 500px;
+  }
+  .thumbnails img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  nav {
+    width: 180px;
+    left: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    background-color: #111;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #4f4f4f;
+  }
+  nav.active {
+    display: flex;
+  }
+  .burger {
+    display: flex;
+  }
+  select {
+    margin-left: 20px;
+  }
+}
+
+/* Center the video */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: black;
+}
+
+.home {
+  display: flex;
+  transition: opacity 1s ease;
+}
+
+.title {
+  font-size: 2em;
+  color: #fff;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home.show {
+  opacity: 1;
+}
+
+.video-container.hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Hide all slides except the one with 'active' class */
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.review-card {
+  text-align: center;
+  padding: 20px;
+  background-color: #5e5e5e;
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.df {
+  gap: 20px;
+  display: flex;
+}
+
+.df-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.slider-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-controls button {
+  background-color: #616161;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.slider-controls button:hover {
+  background-color: #fe7d00;
+}
+
+label {
+  color: white;
+}
+
+input,
+textarea {
+  border-radius: 8px;
+  display: flex;
+  padding: 10px;
+  width: 450px;
+  gap: 20px;
+}
+
+input,
+textarea,
+button {
+  margin: 4px 0;
+  padding: 8px;
+  font-size: 24px;
+}
+
+.contt {
+  margin-top: 70px;
+}
+
+.contt h1 {
+  margin-left: 70px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.button-cntct {
+  width: 450px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(90deg, #ffe600, #ff8000, #ff8000, #ffe600);
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.left-image img {
+  height: 500px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: #111;
+}
+
+footer button {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(45deg, #ffe600, #ff8000, #ffe600);
+  border: none;
+}
+
+footer i {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .home p {
+    font-size: 24px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sticky-left img {
+    display: none;
+  }
+  .scrollable-right {
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .container h1 {
+    display: flex;
+    justify-content: left;
+    text-align: start;
+    padding-left: 0px;
+    position: relative;
+  }
+  .review-slider {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .review-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .review-text {
+    font-size: 18px;
+  }
+  .df {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .df img {
+    width: 100%;
+    height: 230px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact img {
+    width: 400px;
+    height: 400px;
+  }
+}

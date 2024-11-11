@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "0ELYbxJSfdI0D1o3L",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="video-container">
+      <video id="introVideo" autoplay muted playsinline>
+        <source
+          src="assets/WhatsApp Video 2024-10-28 at 11.29.38.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <header>
+      <nav>
+        <a href="#home">Басты бет</a>
+        <a href="#rulesofgame">Ойын ережелері</a>
+        <a href="#photos">Суреттер</a>
+        <a href="#reviews">Пікірлер</a>
+        <a href="#contact">Байланыс</a>
+      </nav>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <select name="languages" id="languages">
+        <option value="kz">KZ</option>
+        <option value="ru">RU</option>
+      </select>
+    </header>
+
+    <div class="home" id="home">
+      <img src="assets/image copy.png" alt="" />
+      <p>
+        «451 градус» атауы Рэй Брэдберидің атақты <br />
+        антиутопиялық романы «Фаренгейт бойынша 451 <br />
+        градус» шығармасынан шабыт алған.
+      </p>
+      <button><a href="#contact">Call to action</a></button>
+    </div>
+
+    <div class="container" id="rulesofgame">
+      <div class="sticky-left">
+        <h1>Ойын <br />ережелері</h1>
+        <img src="assets/fire-left.png" alt="Flame Graphic" />
+      </div>
+      <div class="scrollable-right">
+        <div class="content">
+          <div class="item">
+            <span class="number"><p>1</p></span>
+            <p class="scnd-p">
+              «451 градус» атауы Рэй Брэдберидің атақты антиутопиялық романы
+              «Фаренгейт бойынша 451 градус» шығармасынан шабыт алған.
+            </p>
+          </div>
+          <div class="item">
+            <span class="number"><p>2</p></span>
+            <p class="scnd-p">
+              Кітапта 451 градус Фаренгейт — бұл қағаздың тұтанып, жанып кететін
+              температурасы деп есептеледі. Романда кітаптар тыйым салынған әлем
+              бейнеленген, ал өрт сөндірушілер білім мен еркін ойлауды басу үшін
+              кітаптарды өртейді.
+            </p>
+          </div>
+          <div class="item">
+            <span class="number"><p>3</p></span>
+            <p class="scnd-p">
+              «451 градус» ойыны керісінше білім алу және біліммен бөлісу
+              құштарлығын оятуға бағытталған.
+            </p>
+          </div>
+          <div class="item">
+            <span class="number"><p>4</p></span>
+            <p class="scnd-p">
+              Ойынымыз арқылы әрбір қатысушының әдебиетке деген құштарлығын
+              тұтатқымыз келеді, кітаптар арқылы қызығушылықты, талқылауды және
+              әлемді тереңірек түсінуді оятқымыз келеді. Ақиқат кітапта!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-container" id="photos">
+      <h1>Суреттер</h1>
+      <div class="gallery">
+        <div class="large-image">
+          <img
+            id="displayedImage"
+            src="assets/pexels-photo-5418608.webp"
+            alt="Large Image"
+          />
+        </div>
+        <div class="thumbnails">
+          <img
+            class="thumb"
+            src="assets/pexels-photo-5418608.webp"
+            alt="Thumbnail 1"
+            onclick="changeImage('assets/pexels-photo-5418608.webp')"
+          />
+          <img
+            class="thumb"
+            src="assets/pexels-photo-15517934.webp"
+            alt="Thumbnail 2"
+            onclick="changeImage('assets/pexels-photo-15517934.webp')"
+          />
+          <img
+            class="thumb"
+            src="assets/images.jpeg"
+            alt="Thumbnail 3"
+            onclick="changeImage('assets/images.jpeg')"
+          />
+          <img
+            class="thumb"
+            src="assets/singapore-recruitment-services-500x500.webp"
+            alt="Thumbnail 4"
+            onclick="changeImage('assets/singapore-recruitment-services-500x500.webp')"
+          />
+          <img
+            class="thumb"
+            src="assets/pexels-photo-5893844.webp"
+            alt="Thumbnail 5"
+            onclick="changeImage('assets/pexels-photo-5893844.webp')"
+          />
+          <img
+            class="thumb"
+            src="assets/images (1).jpeg"
+            alt="Thumbnail 6"
+            onclick="changeImage('assets/images (1).jpeg')"
+          />
+          <img
+            class="thumb"
+            src="assets/pexels-photo-15505899.jpeg"
+            alt="Thumbnail 7"
+            onclick="changeImage('assets/pexels-photo-15505899.jpeg')"
+          />
+          <img
+            class="thumb"
+            src="assets/pexels-photo-20616595.jpeg"
+            alt="Thumbnail 8"
+            onclick="changeImage('assets/pexels-photo-20616595.jpeg')"
+          />
+        </div>
+      </div>
+    </div>
+
+    <section class="reviews" id="reviews">
+      <div class="review-slider">
+        <div class="slide active">
+          <div class="review-card">
+            <div class="df">
+              <img
+                src="assets/pexels-photo-15506004.jpeg"
+                alt="Azina Aitbay"
+                class="review-img"
+              />
+              <div class="df-text">
+                <h3>Azina Aitbay</h3>
+                <p>Student</p>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <p class="review-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
+                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
+                sit nihil quos quo consectetur, corporis animi expedita,
+                possimus reprehenderit praesentium vel necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="review-card">
+            <div class="df">
+              <img
+                src="assets/pexels-photo-15506004.jpeg"
+                alt="Azina Aitbay"
+                class="review-img"
+              />
+              <div class="df-text">
+                <h3>John Lark</h3>
+                <p>Student</p>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <p class="review-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
+                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
+                sit nihil quos quo consectetur, corporis animi expedita,
+                possimus reprehenderit praesentium vel necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="review-card">
+            <div class="df">
+              <img
+                src="assets/pexels-photo-15506004.jpeg"
+                alt="Azina Aitbay"
+                class="review-img"
+              />
+              <div class="df-text">
+                <h3>Carl Gok</h3>
+                <p>Student</p>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <p class="review-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
+                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
+                sit nihil quos quo consectetur, corporis animi expedita,
+                possimus reprehenderit praesentium vel necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="review-card">
+            <div class="df">
+              <img
+                src="assets/pexels-photo-15506004.jpeg"
+                alt="Azina Aitbay"
+                class="review-img"
+              />
+              <div class="df-text">
+                <h3>Li Thing Nein</h3>
+                <p>CEO of Garphing Co</p>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <p class="review-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
+                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
+                sit nihil quos quo consectetur, corporis animi expedita,
+                possimus reprehenderit praesentium vel necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- mdskaskdk -->
+      </div>
+      <div class="slider-controls">
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </section>
+    <div id="contact" class="contt">
+      <h1>Бізбен байланысыңыз</h1>
+      <div class="contact">
+        <div class="left-image">
+          <img src="assets/images.jpeg" alt="" />
+        </div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="fullName" placeholder="Full Name" required />
+          <br />
+          <label for="number">Phone number:</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Phone Number"
+            required
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email_id" placeholder="Email" required />
+          <br />
+
+          <button class="button-cntct" onclick="sendMail()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <button>
+        <a href=""><i class="fa fa-whatsapp"></i></a>
+      </button>
+      <button>
+        <a href=""><i class="fa fa-telegram"></i></a>
+      </button>
+      <button>
+        <a href=""><i class="fa fa-envelope"></i></a>
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
