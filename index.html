@@ -17,23 +17,13 @@
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "0ELYbxJSfdI0D1o3L",
+          publicKey: "tmMTF_XY70-hnlQfZ",
         });
       })();
     </script>
   </head>
 
   <body>
-    <div class="video-container">
-      <video id="introVideo" autoplay muted playsinline>
-        <source
-          src="assets/WhatsApp Video 2024-10-28 at 11.29.38.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
     <header>
       <nav>
         <a href="#home">Басты бет</a>
@@ -47,7 +37,6 @@
         <div></div>
         <div></div>
       </div>
-
       <select name="languages" id="languages">
         <option value="kz">KZ</option>
         <option value="ru">RU</option>
@@ -55,7 +44,7 @@
     </header>
 
     <div class="home" id="home">
-      <img src="assets/image copy.png" alt="" />
+      <img src="assets/451 logo with fire.png" alt="" />
       <p>
         «451 градус» атауы Рэй Брэдберидің атақты <br />
         антиутопиялық романы «Фаренгейт бойынша 451 <br />
@@ -105,71 +94,74 @@
         </div>
       </div>
     </div>
-
-    <div class="gallery-container" id="photos">
-      <h1>Суреттер</h1>
-      <div class="gallery">
-        <div class="large-image">
-          <img
-            id="displayedImage"
-            src="assets/pexels-photo-5418608.webp"
-            alt="Large Image"
-          />
-        </div>
-        <div class="thumbnails">
-          <img
-            class="thumb"
-            src="assets/pexels-photo-5418608.webp"
-            alt="Thumbnail 1"
-            onclick="changeImage('assets/pexels-photo-5418608.webp')"
-          />
-          <img
-            class="thumb"
-            src="assets/pexels-photo-15517934.webp"
-            alt="Thumbnail 2"
-            onclick="changeImage('assets/pexels-photo-15517934.webp')"
-          />
-          <img
-            class="thumb"
-            src="assets/images.jpeg"
-            alt="Thumbnail 3"
-            onclick="changeImage('assets/images.jpeg')"
-          />
-          <img
-            class="thumb"
-            src="assets/singapore-recruitment-services-500x500.webp"
-            alt="Thumbnail 4"
-            onclick="changeImage('assets/singapore-recruitment-services-500x500.webp')"
-          />
-          <img
-            class="thumb"
-            src="assets/pexels-photo-5893844.webp"
-            alt="Thumbnail 5"
-            onclick="changeImage('assets/pexels-photo-5893844.webp')"
-          />
-          <img
-            class="thumb"
-            src="assets/images (1).jpeg"
-            alt="Thumbnail 6"
-            onclick="changeImage('assets/images (1).jpeg')"
-          />
-          <img
-            class="thumb"
-            src="assets/pexels-photo-15505899.jpeg"
-            alt="Thumbnail 7"
-            onclick="changeImage('assets/pexels-photo-15505899.jpeg')"
-          />
-          <img
-            class="thumb"
-            src="assets/pexels-photo-20616595.jpeg"
-            alt="Thumbnail 8"
-            onclick="changeImage('assets/pexels-photo-20616595.jpeg')"
-          />
+    <section class="photo-gallery">
+      <div class="gallery-container" id="photos">
+        <div class="gallery">
+          <div class="large-image">
+            <img
+              id="displayedImage"
+              src="assets/pexels-photo-5418608.webp"
+              alt="Large Image"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              class="thumb"
+              src="assets/pexels-photo-5418608.webp"
+              alt="Thumbnail 1"
+              onclick="changeImage('assets/pexels-photo-5418608.webp')"
+            />
+            <img
+              class="thumb"
+              src="assets/pexels-photo-15517934.webp"
+              alt="Thumbnail 2"
+              onclick="changeImage('assets/pexels-photo-15517934.webp')"
+            />
+            <img
+              class="thumb"
+              src="assets/images.jpeg"
+              alt="Thumbnail 3"
+              onclick="changeImage('assets/images.jpeg')"
+            />
+            <img
+              class="thumb"
+              src="assets/singapore-recruitment-services-500x500.webp"
+              alt="Thumbnail 4"
+              onclick="changeImage('assets/singapore-recruitment-services-500x500.webp')"
+            />
+            <img
+              class="thumb"
+              src="assets/pexels-photo-5893844.webp"
+              alt="Thumbnail 5"
+              onclick="changeImage('assets/pexels-photo-5893844.webp')"
+            />
+            <img
+              class="thumb"
+              src="assets/images (1).jpeg"
+              alt="Thumbnail 6"
+              onclick="changeImage('assets/images (1).jpeg')"
+            />
+            <img
+              class="thumb"
+              src="assets/pexels-photo-15505899.jpeg"
+              alt="Thumbnail 7"
+              onclick="changeImage('assets/pexels-photo-15505899.jpeg')"
+            />
+            <img
+              class="thumb"
+              src="assets/pexels-photo-20616595.jpeg"
+              alt="Thumbnail 8"
+              onclick="changeImage('assets/pexels-photo-20616595.jpeg')"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section class="reviews" id="reviews">
+      <div class="titlle">
+        <h1>Пікірлер</h1>
+      </div>
       <div class="review-slider">
         <div class="slide active">
           <div class="review-card">
@@ -286,32 +278,35 @@
         <button class="next">❯</button>
       </div>
     </section>
-    <div id="contact" class="contt">
-      <h1>Бізбен байланысыңыз</h1>
-      <div class="contact">
-        <div class="left-image">
-          <img src="assets/images.jpeg" alt="" />
-        </div>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="fullName" placeholder="Full Name" required />
-          <br />
-          <label for="number">Phone number:</label>
-          <input
-            type="number"
-            id="number"
-            placeholder="Phone Number"
-            required
-          />
-          <br />
-          <label for="email">Email:</label>
-          <input type="email" id="email_id" placeholder="Email" required />
-          <br />
 
-          <button class="button-cntct" onclick="sendMail()">Send</button>
+    <section id="contact">
+      <h1>Байланыс</h1>
+      <div class="contt">
+        <div class="contact">
+          <div class="left-image">
+            <img src="assets/images.jpeg" alt="" />
+          </div>
+          <div>
+            <label for="name">Аты-Жөні:</label>
+            <input type="text" id="fullName" placeholder="Аты-Жөні" required />
+            <br />
+            <label for="number">Телефон номері:</label>
+            <input
+              type="tel"
+              id="number"
+              placeholder="Телефон номері"
+              required
+            />
+            <br />
+            <label for="email">Почта:</label>
+            <input type="email" id="email_id" placeholder="Почта" required />
+            <br />
+
+            <button class="button-cntct" onclick="sendMail()">Жіберу</button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <footer>
       <button>

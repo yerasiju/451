@@ -5,9 +5,9 @@ document
 function navigateLanguage() {
   const selectedLanguage = document.getElementById("languages").value;
   if (selectedLanguage === "ru") {
-    window.location.href = "ru.html"; // Redirects to the Russian version of the page
+    window.location.href = "ru.html"; // Redirects to the Kazakh version
   } else if (selectedLanguage === "kz") {
-    window.location.href = "kz.html"; // Redirects to the Kazakh version of the page
+    window.location.href = "kz.html"; // Redirects to the Russian version
   }
 }
 
@@ -38,24 +38,8 @@ document.querySelector(".prev").addEventListener("click", () => {
   slides[currentSlide].classList.add("active");
 });
 
-// script.js
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementById("introVideo");
-  const videoContainer = document.querySelector(".video-container");
-  const content = document.querySelector(".content");
-
-  video.onended = () => {
-    videoContainer.classList.add("hidden");
-    content.classList.add("show");
-    setTimeout(() => {
-      videoContainer.style.display = "none";
-    }, 1000); // Delay to match the CSS transition
-  };
-});
-
-// Initialize EmailJS with your user ID
 (function () {
-  emailjs.init("0ELYbxJSfdI0D1o3L");
+  emailjs.init("tmMTF_XY70-hnlQfZ");
 })();
 
 function sendMail() {
@@ -65,7 +49,7 @@ function sendMail() {
     number: document.getElementById("number").value,
   };
   emailjs
-    .send("service_z71vyvr", "template_tia16pb", parametres)
+    .send("service_d55cp2c", "template_70e2jzb", parametres)
     .then(function (res) {
       alert("Succcess " + res.status);
     });
