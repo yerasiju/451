@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="style.css" />
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -26,37 +28,36 @@
   <body>
     <header>
       <nav>
-        <a href="#home">Главная</a>
-        <a href="#rulesofgame">Правила игры</a>
-        <a href="#photos">Фотографии</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#contact"> Контакты</a>
+        <a href="#home">Басты бет</a>
+        <a href="#rulesofgame">Ойын ережелері</a>
+        <a href="#photos">Суреттер</a>
+        <a href="#reviews">Пікірлер</a>
+        <a href="#contact">Байланыс</a>
       </nav>
       <div class="burger">
         <div></div>
         <div></div>
         <div></div>
       </div>
-
       <select name="languages" id="languages">
-        <option value="kz">RU</option>
-        <option value="ru">KZ</option>
+        <option value="kz">KZ</option>
+        <option value="ru">RU</option>
       </select>
     </header>
 
     <div class="home" id="home">
       <img src="assets/451 logo with fire.png" alt="" />
       <p>
-        Название "451 градус" вдохновлено знаменитым <br />
-        антиутопическим романом Рэя Брэдбери <br />
-        "451 градус по Фаренгейту".
+        «451 градус» атауы Рэй Брэдберидің атақты <br />
+        антиутопиялық романы «Фаренгейт бойынша 451 <br />
+        градус» шығармасынан шабыт алған.
       </p>
-      <button><a href="#contact">Призыв к действию</a></button>
+      <button><a href="#contact">Call to action</a></button>
     </div>
 
     <div class="container" id="rulesofgame">
       <div class="sticky-left">
-        <h1>Правила <br />игры</h1>
+        <h1>Ойын <br />ережелері</h1>
         <img src="assets/fire-left.png" alt="Flame Graphic" />
       </div>
       <div class="scrollable-right">
@@ -64,39 +65,39 @@
           <div class="item">
             <span class="number"><p>1</p></span>
             <p class="scnd-p">
-              Название "451 градус" вдохновлено знаменитым антиутопическим
-              романом Рэя Брэдбери "451 градус по Фаренгейту".
+              «451 градус» атауы Рэй Брэдберидің атақты антиутопиялық романы
+              «Фаренгейт бойынша 451 градус» шығармасынан шабыт алған.
             </p>
           </div>
           <div class="item">
             <span class="number"><p>2</p></span>
             <p class="scnd-p">
-              В книге 451 градус по Фаренгейту считается температурой, при
-              которой загорается и горит бумага. В романе изображен мир, где
-              книги запрещены, а пожарные сжигают их, подавляя знания и
-              свободное мышление.
+              Кітапта 451 градус Фаренгейт — бұл қағаздың тұтанып, жанып кететін
+              температурасы деп есептеледі. Романда кітаптар тыйым салынған әлем
+              бейнеленген, ал өрт сөндірушілер білім мен еркін ойлауды басу үшін
+              кітаптарды өртейді.
             </p>
           </div>
           <div class="item">
             <span class="number"><p>3</p></span>
             <p class="scnd-p">
-              Игра "451 градус", напротив, направлена на пробуждение страсти к
-              получению знаний и их распространению.
+              «451 градус» ойыны керісінше білім алу және біліммен бөлісу
+              құштарлығын оятуға бағытталған.
             </p>
           </div>
           <div class="item">
             <span class="number"><p>4</p></span>
             <p class="scnd-p">
-              Через нашу игру мы хотим разжечь у каждого участника страсть к
-              литературе, пробудить интерес, обсуждения и более глубокое
-              понимание мира через книги. Истина в книгах!
+              Ойынымыз арқылы әрбір қатысушының әдебиетке деген құштарлығын
+              тұтатқымыз келеді, кітаптар арқылы қызығушылықты, талқылауды және
+              әлемді тереңірек түсінуді оятқымыз келеді. Ақиқат кітапта!
             </p>
           </div>
         </div>
       </div>
     </div>
     <section class="photo-gallery">
-      <h1>Фотографии</h1>
+      <h1>Суреттер</h1>
       <div class="gallery-container" id="photos">
         <div class="gallery">
           <div class="large-image">
@@ -162,113 +163,226 @@
 
     <section class="reviews" id="reviews">
       <div class="titlle">
-        <h1>Отзывы</h1>
+        <h1>Пікірлер</h1>
       </div>
       <div class="review-slider">
         <div class="slide active">
-          <div class="review-card">
-            <div class="df">
-              <img
-                src="assets/pexels-photo-15506004.jpeg"
-                alt="Azina Aitbay"
-                class="review-img"
-              />
-              <div class="df-text">
-                <h3>Azina Aitbay</h3>
-                <p>Student</p>
+          <div class="slides">
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>Li Thing Nein</h3>
+                  <p>CEO of Garphing Co</p>
+
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="review-content">
-              <p class="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
-                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
-                sit nihil quos quo consectetur, corporis animi expedita,
-                possimus reprehenderit praesentium vel necessitatibus.
-              </p>
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>Li Thing Nein</h3>
+                  <p>CEO of Garphing Co</p>
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="slide">
-          <div class="review-card">
-            <div class="df">
-              <img
-                src="assets/pexels-photo-15506004.jpeg"
-                alt="Azina Aitbay"
-                class="review-img"
-              />
-              <div class="df-text">
-                <h3>John Lark</h3>
-                <p>Student</p>
+          <div class="slides">
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>John Doe</h3>
+                  <p>CEO of Garphing Co</p>
+
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="review-content">
-              <p class="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
-                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
-                sit nihil quos quo consectetur, corporis animi expedita,
-                possimus reprehenderit praesentium vel necessitatibus.
-              </p>
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>John Doe</h3>
+                  <p>CEO of Garphing Co</p>
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="slide">
-          <div class="review-card">
-            <div class="df">
-              <img
-                src="assets/pexels-photo-15506004.jpeg"
-                alt="Azina Aitbay"
-                class="review-img"
-              />
-              <div class="df-text">
-                <h3>Carl Gok</h3>
-                <p>Student</p>
+          <div class="slides">
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>Li Thing Nein</h3>
+                  <p>CEO of Garphing Co</p>
+
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="review-content">
-              <p class="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
-                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
-                sit nihil quos quo consectetur, corporis animi expedita,
-                possimus reprehenderit praesentium vel necessitatibus.
-              </p>
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>Mark Simons</h3>
+                  <p>CEO of Garphing Co</p>
+
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="slide">
-          <div class="review-card">
-            <div class="df">
-              <img
-                src="assets/pexels-photo-15506004.jpeg"
-                alt="Azina Aitbay"
-                class="review-img"
-              />
-              <div class="df-text">
-                <h3>Li Thing Nein</h3>
-                <p>CEO of Garphing Co</p>
+          <div class="slides">
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>Noon Trum</h3>
+                  <p>CEO of Garphing Co</p>
+
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="review-content">
-              <p class="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas tortor nulla, sollicitudin at faucibus et, auctor sit
-                amet eros. Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ducimus, ex. Corrupti tenetur ipsa ratione sint. In ipsam
-                sit nihil quos quo consectetur, corporis animi expedita,
-                possimus reprehenderit praesentium vel necessitatibus.
-              </p>
+            <div class="review-card">
+              <div class="df">
+                <img
+                  src="assets/pexels-photo-15506004.jpeg"
+                  alt="Azina Aitbay"
+                  class="review-img"
+                />
+                <div class="df-text">
+                  <h3>Li Thing Nein</h3>
+                  <p>CEO of Garphing Co</p>
+                  <div class="review-content">
+                    <p class="review-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Maecenas tortor nulla, sollicitudin at faucibus et, auctor
+                      sit amet eros. Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Ducimus, ex. Corrupti tenetur ipsa
+                      ratione sint. In ipsam sit nihil quos quo consectetur,
+                      corporis animi expedita, possimus reprehenderit
+                      praesentium vel necessitatibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -282,29 +396,39 @@
     </section>
 
     <section id="contact">
-      <h1>Контакты</h1>
+      <h1>Байланыс</h1>
       <div class="contt">
         <div class="contact">
           <div class="left-image">
             <img src="assets/images.jpeg" alt="" />
           </div>
           <div>
-            <label for="name">Фамилия-Имя:</label>
-            <input type="text" id="fullName" placeholder="ФИО" required />
+            <label for="name">Аты-Жөні:</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Еркебұлан Жолымбек"
+              required
+            />
             <br />
-            <label for="number">Номер телефона:</label>
+            <label for="number">Телефон номері:</label>
             <input
               type="tel"
               id="number"
-              placeholder="Телефонный номер"
+              placeholder="8-777-123-90-90"
               required
             />
             <br />
             <label for="email">Почта:</label>
-            <input type="email" id="email_id" placeholder="Почта" required />
+            <input
+              type="email"
+              id="email_id"
+              placeholder="example@gmail.com"
+              required
+            />
             <br />
 
-            <button class="button-cntct" onclick="sendMail()">Отправить</button>
+            <button class="button-cntct" onclick="sendMail()">Жіберу</button>
           </div>
         </div>
       </div>
