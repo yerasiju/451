@@ -28,7 +28,6 @@
   <body>
     <header>
       <nav>
-        <a href="#home">Басты бет</a>
         <a href="#rulesofgame">Ойын ережелері</a>
         <a href="#photos">Суреттер</a>
         <a href="#reviews">Пікірлер</a>
@@ -40,19 +39,15 @@
         <div></div>
       </div>
       <select name="languages" id="languages">
-        <option value="kz">KZ</option>
         <option value="ru">RU</option>
+        <option value="kz">KZ</option>
       </select>
     </header>
 
     <div class="home" id="home">
       <img src="assets/451 logo with fire.png" alt="" />
-      <p>
-        «451 градус» атауы Рэй Брэдберидің атақты <br />
-        антиутопиялық романы «Фаренгейт бойынша 451 <br />
-        градус» шығармасынан шабыт алған.
-      </p>
-      <button><a href="#contact">Call to action</a></button>
+      <p>Кітап оқышы, Құдай үшін!</p>
+      <button><a href="#contact">Бізбен байланыс</a></button>
     </div>
 
     <div class="container" id="rulesofgame">
@@ -96,9 +91,9 @@
         </div>
       </div>
     </div>
-    <section class="photo-gallery">
+    <section class="photo-gallery" id="photos">
       <h1>Суреттер</h1>
-      <div class="gallery-container" id="photos">
+      <div class="gallery-container">
         <div class="gallery">
           <div class="large-image">
             <img
@@ -428,7 +423,9 @@
             />
             <br />
 
-            <button class="button-cntct" onclick="sendMail()">Жіберу</button>
+            <button class="button-cntct" onclick="sendMail()">
+              Бізбен байланыс
+            </button>
           </div>
         </div>
       </div>

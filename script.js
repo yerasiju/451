@@ -7,7 +7,7 @@ function navigateLanguage() {
   if (selectedLanguage === "ru") {
     window.location.href = "ru.html"; // Redirects to the Kazakh version
   } else if (selectedLanguage === "kz") {
-    window.location.href = "kz.html"; // Redirects to the Russian version
+    window.location.href = "index.html"; // Redirects to the Russian version
   }
 }
 
