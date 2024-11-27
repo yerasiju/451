@@ -26,16 +26,36 @@ burger.addEventListener("click", () => {
 const slides = document.querySelectorAll(".slide");
 let currentSlide = 0; // Start with the first slide
 
-document.querySelector(".next").addEventListener("click", () => {
+// Function to go to the next slide
+function nextSlide() {
   slides[currentSlide].classList.remove("active");
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add("active");
-});
+}
 
-document.querySelector(".prev").addEventListener("click", () => {
+// Function to go to the previous slide
+function prevSlide() {
   slides[currentSlide].classList.remove("active");
   currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   slides[currentSlide].classList.add("active");
+}
+
+// Event listeners for manual navigation
+document.querySelector(".next").addEventListener("click", nextSlide);
+document.querySelector(".prev").addEventListener("click", prevSlide);
+
+// Auto-scroll functionality
+let autoScrollInterval = setInterval(nextSlide, 5000); // Change slide every 3 seconds
+
+// Optional: Pause auto-scroll on user interaction
+const sliderContainer = document.querySelector(".slider-container"); // Replace with your slider wrapper class or ID
+
+sliderContainer.addEventListener("mouseenter", () => {
+  clearInterval(autoScrollInterval); // Stop auto-scroll when mouse enters the slider
+});
+
+sliderContainer.addEventListener("mouseleave", () => {
+  autoScrollInterval = setInterval(nextSlide, 5000); // Restart auto-scroll when mouse leaves the slider
 });
 
 (function () {
