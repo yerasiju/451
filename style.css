@@ -479,8 +479,8 @@ textarea {
 }
 
 .left-image img {
-  height: 500px;
-  width: 420px;
+  height: 450px;
+  width: 100%;
   border-radius: 15px;
 }
 
